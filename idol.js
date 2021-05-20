@@ -750,7 +750,7 @@ var Button = function(text, classes, onClickFunction, mouseDownInstead)
 	this.element = element;
 }
 
-var optionsLink = CreateSimpleElement("span",["metaLink"],"Options");
+var optionsLink = CreateSimpleElement("span",["metaLink"],"选项");
 optionsLink.onclick = function(event)
 {
 	var clientRect = optionsLink.getBoundingClientRect();
@@ -762,7 +762,7 @@ optionsLink.onclick = function(event)
 metaContent.appendChild(optionsLink);
 metaContent.appendChild(CreateSimpleElement("span",["separator"]));
 
-var changelogLink = CreateSimpleElement("span",["metaLink"],"Changelog");
+var changelogLink = CreateSimpleElement("span",["metaLink"],"更新日志");
 changelogLink.onclick = function(event,button)
 {
 	var clientRect = changelogLink.getBoundingClientRect();
@@ -775,7 +775,7 @@ changelogLink.onclick = function(event,button)
 metaContent.appendChild(changelogLink);
 metaContent.appendChild(CreateSimpleElement("span",["separator"]));
 
-var helpLink = CreateSimpleElement("span",["metaLink"],"Help");
+var helpLink = CreateSimpleElement("span",["metaLink"],"帮助");
 helpLink.onclick = function(event,button)
 {
 	var clientRect = helpLink.getBoundingClientRect();
